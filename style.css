@@ -1,0 +1,127 @@
+
+body.modal-open {
+	overflow: hidden;
+}
+
+
+.addressbook {
+    width: 500px;
+    height: 800px;
+    border: 1px solid #000;
+    margin: 50px auto 0;
+    position: relative;
+}
+
+.addressbook-top {
+    height: 80px;
+    border-bottom: 1px solid #000;
+}
+
+.addressbook-top-inner-icon {
+    padding-top: 5px;
+}
+
+.addressbook-top-inner {
+    display: flex;
+    padding: 20px 20px;
+    justify-content: space-between;
+}
+
+.top-input {
+    border-radius: 20px;
+    width: 400px;
+    height: 40px;
+    padding: 10px;
+    outline: none;
+}
+
+.addressbook-content {
+
+    overflow-y: scroll;
+	overflow-x: hidden;
+	height: 500px;
+}
+
+.addressbook-item {
+    border-bottom: 1px solid #000;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+}
+
+.addressbook-item-logo {
+    width: 60px;
+    height: 60px;
+}
+
+.addressbook-item-data {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    gap: 5px;
+}
+
+.addressbook-item-name {
+    font-size: 24px;
+}
+
+.addressbook-item-addressbook {
+    font-size: 24px;
+}
+
+.addressbook-item-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.addressbook-item-delete {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+}
+
+.addressbook-item-favourite {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.button-img, .button-love {
+    width: 30px;
+    height: 30px;
+}
+
+
+.addressbook-footer {
+    height: 80px;
+    border-top: 1px solid #000;
+    position: absolute;
+    bottom: 0;
+    width: 500px;
+}
+
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+.footer-btn {
+    font-size: 36px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.add-modal {
+	position: absolute;
+	top: 0;
+	z-index: 10;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: rgba(0,0,0, .9);
+	overflow: hidden;
+}
